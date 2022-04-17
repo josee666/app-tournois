@@ -1,0 +1,40 @@
+
+
+
+
+
+.title {
+     font-size: xx-large;
+     color: #ffd91b;
+     font-family: cursive;
+
+}
+
+  .date {
+    font-size: 100px;
+    // font-size: xxx-large;
+    color: #ffd91b;
+    font-family: roboto;
+    // font-family: cursive;
+    font-weight: 900;
+    font-style: italic;
+    @media screen and (max-width: 575px) {
+      font-size: xxx-large ;
+    }
+  }
+
+.img-scc {
+  border-radius: 21%;
+  @media screen and (max-width: 575px) {
+    width:90%;
+  }
+}
+
+.profit-remis {
+  font-size: xx-large;
+  @media screen and (max-width: 575px) {
+    margin-top: 8%;
+  }
+}
+
+ 

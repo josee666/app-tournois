@@ -1,0 +1,113 @@
+// body {
+    // background-color: #002F55;
+    // font-family: cursive !important;
+    // background: linear-gradient(to right, #002F55, black, #002F55);
+    // font:inherit !important;
+// }
+
+.img-dekp9{
+    margin: 10px;
+    height: 74%;
+    width: 8%;
+    border-radius:15% ;
+    padding:1%;
+    @media screen and (max-width: 575px) {
+      display: none;
+        // margin:5px;
+        // height: 50%;
+        // width: 25%;
+      }
+}
+
+.img2-dekp9{
+  margin-right: 15%;
+  margin-top: 10px;
+  height: 74%;
+  width: 8%;
+  border-radius:15% ;
+  padding:1%;
+  @media screen and (max-width: 575px) {
+      margin:5px;
+      height: 50%;
+      width: 25%;
+    }
+}
+
+// .img-dekp92 {
+//     @media screen and (max-width: 575px) {
+//         display: none;
+//       }
+// }
+
+br {
+    @media screen and (max-width: 575px) {
+        display: none;
+      }
+}
+
+.menu-button {
+    width: 100%;
+    height:50%;
+    margin:30px;
+    background-color: #ffd91b;
+    border-radius:15% ;
+    font-weight: 900;
+    font-size:larger;
+    box-shadow: 6px 1px 16px 2px #888888;
+    // font-family: cursive;
+    font-family: script;
+    @media screen and (max-width: 575px) {
+        width: 80%;
+        font-weight: 900;
+        font-size:larger;
+        margin-right:0px;
+        border-radius:45% ;
+        margin-top: 17px;
+        margin-bottom: 10px;
+      }
+
+
+}
+.container-flex-banner {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    border-radius: 60px 60px 60px 60px;
+    @media screen and (max-width: 575px) {
+        display: block;
+        border-radius: 35px 35px 25px 35px;
+
+      }
+}
+.container-flex-banner-eve{
+    display: flex;
+    width:84%;
+    @media screen and (max-width: 575px) {
+        width:100%;
+      }
+}
+
+
+h1 { 
+    width:100%;
+    text-align: center;
+    color: #ffd91b;
+    text-transform: uppercase;
+    padding: 1px;
+    font-family:'Encode Sans';
+    // font-family: 'Raleway', cursive;
+    font-weight: 100;
+    // font-weight: 100;
+    position: relative;
+    // background: linear-gradient(to right, #002F55, black, #002F55);
+    letter-spacing: 30px;
+    text-decoration-line: underline;
+    
+  }
+
+  .title-menu{
+    margin-right: 30px;
+    // font-size: larger;
+
+    
+}

@@ -1,0 +1,180 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { font:inherit !important;  }
+body { margin: 0; 
+    font-family: Roboto, "Helvetica Neue", sans-serif; 
+    // background: linear-gradient(to right, #002F55, #2C88D3, #002F55); 
+    // background: linear-gradient(to right, #002F55, white, #002F55); 
+    // background: linear-gradient(to right, #002F55, black, #002F55); 
+    background: linear-gradient(to right, #0b5591, rgb(8, 5, 31), #0b5591); 
+}
+
+// @font-face {
+//   font-family: "Rooster";
+//   src: local("OxyRoosteren"), url(./assets/fonts/rooster-font/Rooster.ttf) format("truetype");
+// }
+
+.underline {
+    text-decoration-line: underline;
+  }
+
+  img {
+    margin:1%;
+    @media screen and (max-width: 575px) {
+        height: auto;
+      }
+}
+
+  .text-jaune {
+    color: #ffd91b;
+    // font-family: "Rooster";
+    // font-family: cursive;
+    font-family: script;
+    // "Rooster"
+    font-weight: 900;
+    font-style: italic;
+    margin: auto;
+  }
+
+  .fontxxx {
+    font-size: xxx-large;
+    @media screen and (max-width: 575px) {
+          font-size: x-large;
+        }
+  }
+
+  .fontxx {
+    font-size: xx-large;
+    @media screen and (max-width: 575px) {
+        font-size: large;
+      }
+  }
+
+  .fontx {
+    font-size: x-large;
+    @media screen and (max-width: 575px) {
+        font-size: large;
+      }
+  }
+
+  .font-size400{
+    font-size: 400%;
+    margin: 2%;
+  }
+
+  .margin {
+    margin: 20px; 
+    @media screen and (max-width: 575px) {
+        margin:12px;
+      }
+  }
+  .margin-top4prc {
+    margin-top: 4%;
+  }
+  .margin-top15prc {
+    margin-top: 15%;
+  }
+  .margin-top20prc {
+    margin-top: 20%;
+  }
+  .margin-top4px {
+    margin-top: 4px;
+  }
+
+  .margin-top15px {
+    margin-top: 15px;
+  }
+
+  .margin-top30px {
+    margin-top: 30px;
+  }
+
+  // .margin-top {
+  //   margin-top: 20px; 
+  //   @media screen and (max-width: 575px) {
+  //       margin:15px;
+  //     }
+  // }
+
+
+  .container-flex {
+    display: flex;
+    // justify-content: flex-start;
+    
+}
+
+.container-flex-space-betweeen {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-flex-start {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.container-flex-center {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.container-flex-evenly {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2%;
+}
+
+.container-flex-space-around {
+    display: flex;
+    justify-content: space-around;
+    @media screen and (max-width: 575px) {
+      // margin-left:1px;
+    }
+
+    // margin: 50px;
+
+}
+mat-sidenav-content {
+  background: linear-gradient(to right, #0b5591, rgb(8, 5, 31), #0b5591); 
+}
+.text-banner{
+    text-shadow: 2px 2px 5px rgb(235, 99, 8);
+    text-align: center;
+    font-weight: 100;
+    padding-top: 1%;
+    font-size: 600%;
+    margin-left: 4%;
+    @media screen and (max-width: 575px) {
+        margin:1px;
+        font-size: 260%;
+      }
+}
+
+.br-hide-desk {
+  display: none;
+  @media screen and (max-width: 575px) {
+    display: block;
+  }
+}
+
+.hide {
+  display: none;
+}
+
+button {
+  font-family: cursive;
+}
+
+.app-list {
+  width: 50%;
+  margin-top: 30px;
+  @media screen and (max-width: 575px) {
+    width: 90%;
+    padding-left: 1px;
+  }
+ 
+}
+
+
+

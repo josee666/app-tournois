@@ -1,0 +1,19 @@
+
+.formule-tournoi {
+    margin-top: 0%;
+    @media screen and (max-width: 575px) {
+        margin-top: 4%;
+      }
+}
+.cout {
+    // text-shadow: 4px 4px 4px #aaa;
+    @media screen and (max-width: 575px) {
+        margin-top: 20%;
+      }
+}
+
+.categorie {
+    @media screen and (max-width: 575px) {
+        margin-top: 12%;
+      }
+}

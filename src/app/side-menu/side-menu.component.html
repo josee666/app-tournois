@@ -1,0 +1,97 @@
+
+<mat-sidenav-container>
+
+    <mat-sidenav
+        #sidenav
+        mode="over"
+        hasBackdrop = "False"
+        fixedInViewport = "fixe"
+        fixedTopGap = 80
+        fixedBottomGap = 70
+        [(opened)]="opened"
+        (opened)="events.push('open!')"
+        (closed)="events.push('close!')"
+        >
+
+        <mat-nav-list>
+            <mat-list-item (click)="sidenav.toggle()"
+                id="menu-button"
+                class="menu-button"
+                tooltip-position="below"
+                matTooltipShowDelay="500"
+                matTooltip="Fermer menu">
+                <mat-icon matListIcon >menu</mat-icon>
+                Menu
+            </mat-list-item>
+        </mat-nav-list>
+        <mat-nav-list>
+            <!-- <h1 matSubheader> Authentification </h1> -->
+            <mat-list-item (click)="onClicBackHome();sidenav.toggle()">
+                <mat-icon matListIcon>home</mat-icon>
+                Retour accueil
+            </mat-list-item>
+     
+            <mat-list-item
+                (click) = "onClicMenuDetailTournois();sidenav.toggle()"
+                >
+            <mat-icon  matListIcon>help</mat-icon>
+                Détail mini-tournoi
+            </mat-list-item>
+
+            <mat-list-item
+                (click) = "onClicMenuDetailLibre();sidenav.toggle()"
+                >
+            <mat-icon  matListIcon>help</mat-icon>
+                Détail partie libre
+            </mat-list-item>
+            <mat-list-item (click) = "onClicMenuInscription();sidenav.toggle()">
+                <mat-icon  matListIcon>create</mat-icon>
+                Inscription
+            </mat-list-item>
+            <mat-list-item (click) = "onClicMenuFoire();sidenav.toggle()">
+                <mat-icon  matListIcon></mat-icon>
+                Foire question
+            </mat-list-item>
+            <mat-list-item
+                (click) = "onClicMenuNousJoindre();sidenav.toggle()"
+                >
+            <mat-icon  matListIcon></mat-icon>
+                Nous joindre
+            </mat-list-item>
+        </mat-nav-list>
+        
+    </mat-sidenav>
+
+    <!-- contenue menu ouvert -->
+    <mat-sidenav-content>
+  
+    <app-header
+    (clicMenuEvent) = "sidenav.toggle()">
+    </app-header>
+
+      <!-- (clicMenuEvent)="eventHandler($event)" -->
+
+        <app-accueil *ngIf="accueilIsOn"
+            (clicMenuEvent)="sidenav.toggle()"
+            >
+        </app-accueil>
+
+        <app-detail *ngIf="detailsTournoisIsOn">
+        </app-detail>
+
+        <app-detail-libre *ngIf="detailsLibreIsOn">
+        </app-detail-libre>
+
+        <app-inscription *ngIf="inscriptionIsOn">
+        </app-inscription>
+
+        <app-foire *ngIf="foireIsOn">
+        </app-foire>
+
+        <app-nous-joindre *ngIf="nousJoindreIsOn">
+        </app-nous-joindre>
+
+
+    </mat-sidenav-content>
+
+</mat-sidenav-container>

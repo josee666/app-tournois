@@ -1,0 +1,39 @@
+
+https://levelup.gitconnected.com/learn-how-to-create-and-deploy-the-angular-application-to-aws-serverless-s3-81f8a838b563
+
+
+1: ng build
+
+2: AWS: create bucket -> property select Static website hosting
+
+3: AWS : set index + error page -> index.html
+
+4: AWS: check le endpoint url prsent dans la console : http://josee-app-tournois.s3-website-us-east-1.amazonaws.com
+
+5: AWS: set permission/acces
+- permission tab
+- bucket policy - edit
+  decoche les 2 dernier: 
+			Block public and cross-account access to buckets and objects through any public bucket or access point policies
+			Block public access to buckets and objects granted through new public bucket or access point policies
+
+
+
+6: apply a policy that will grant anonymous users to access our data.
+- permission
+- bucket policy
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "AddPermission",
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": "s3:GetObject",
+            "Resource": "arn:aws:s3:::josee-app-tournois/*"
+        }
+    ]
+}
+
+
+
