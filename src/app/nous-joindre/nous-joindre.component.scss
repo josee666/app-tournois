@@ -1,0 +1,28 @@
+
+
+
+.question {
+    margin-top:8%;
+    text-align: center;
+    @media screen and (max-width: 575px) {
+        margin-top:15%
+    }
+}
+
+a:link {
+    color: rgb(0,139,255);
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  a:visited {
+    color: violet;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  a:hover {
+    color: rgb(255,97,0);
+    background-color: transparent;
+    text-decoration: underline;
+  }

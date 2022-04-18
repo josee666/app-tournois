@@ -13,8 +13,8 @@ export class SideMenuComponent implements OnInit {
   events: string[] = [];  // event open, close on menu
   opened= false;
 
-  accueilIsOn= false;
-  inscriptionIsOn = true;
+  accueilIsOn= true;
+  inscriptionIsOn = false;
   detailsTournoisIsOn = false;
   detailsLibreIsOn = false;
   nousJoindreIsOn= false;
