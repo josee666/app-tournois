@@ -6,7 +6,7 @@ body { margin: 0;
     // background: linear-gradient(to right, #002F55, #2C88D3, #002F55); 
     // background: linear-gradient(to right, #002F55, white, #002F55); 
     // background: linear-gradient(to right, #002F55, black, #002F55); 
-    background: linear-gradient(to right, #0b5591, rgb(8, 5, 31), #0b5591); 
+    background: linear-gradient(to right, #0b5591, rgb(8, 5, 31), #0b5591) !important; 
 }
 
 // @font-face {
@@ -17,8 +17,10 @@ body { margin: 0;
 
 .img-scc {
   border-radius: 21%;
+
   @media screen and (max-width: 575px) {
     width:90%;
+    margin-top: 6%;
   }
 }
 
@@ -79,9 +81,26 @@ body { margin: 0;
   .margin-top4prc {
     margin-top: 4%;
   }
+  .margin-top10prc-cell {
+    margin-top: 4%;
+    @media screen and (max-width: 575px) {
+      margin-top:10%;
+    }
+  }
+
+  .margin-reponse {
+    margin-top: 1%;
+    margin-left: 2%;
+    @media screen and (max-width: 575px) {
+      margin-top: 4%;
+      margin-left: 6%;
+    }
+  }
+
   .margin-top15prc {
     margin-top: 15%;
   }
+
   .margin-top20prc {
     margin-top: 20%;
   }
