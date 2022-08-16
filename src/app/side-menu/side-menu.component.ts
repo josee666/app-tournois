@@ -19,6 +19,7 @@ export class SideMenuComponent implements OnInit {
   detailsLibreIsOn = false;
   nousJoindreIsOn= false;
   foireIsOn = false;
+  horaireIsOn = false
 
   constructor() { }
 
@@ -34,6 +35,7 @@ export class SideMenuComponent implements OnInit {
     this.detailsLibreIsOn = false;
     this.nousJoindreIsOn = false;
     this.foireIsOn = false;
+    this.horaireIsOn = false;
   }
 
   onClicMenuInscription() {
@@ -44,6 +46,7 @@ export class SideMenuComponent implements OnInit {
     this.detailsLibreIsOn = false;
     this.nousJoindreIsOn = false;
     this.foireIsOn = false;
+    this.horaireIsOn = false;
   
   }
 
@@ -55,6 +58,7 @@ export class SideMenuComponent implements OnInit {
     this.detailsLibreIsOn = false;
     this.nousJoindreIsOn = false;
     this.foireIsOn = false;
+    this.horaireIsOn = false;
   }
   onClicMenuDetailLibre() {
     this.accueilIsOn= false;
@@ -63,6 +67,7 @@ export class SideMenuComponent implements OnInit {
     this.detailsLibreIsOn = true;
     this.nousJoindreIsOn = false;
     this.foireIsOn = false;
+    this.horaireIsOn = false;
   }
 
   onClicMenuFoire() {
@@ -73,8 +78,19 @@ export class SideMenuComponent implements OnInit {
     this.detailsLibreIsOn = false;
     this.nousJoindreIsOn = false;
     this.foireIsOn = true;
+    this.horaireIsOn = false;
   }
 
+  onClicMenuHoraire() {
+    console.log('horraire')
+    this.accueilIsOn= false;
+    this.inscriptionIsOn = false;
+    this.detailsTournoisIsOn = false;
+    this.detailsLibreIsOn = false;
+    this.nousJoindreIsOn = false;
+    this.foireIsOn = false;
+    this.horaireIsOn = true;
+  }
   onClicMenuNousJoindre() {
     console.log('nous joindre questions')
     this.accueilIsOn= false;
@@ -83,6 +99,7 @@ export class SideMenuComponent implements OnInit {
     this.detailsLibreIsOn = false;
     this.nousJoindreIsOn = true;
     this.foireIsOn = false;
+    this.horaireIsOn = false;
   }
 
   eventHandler(event: any) {

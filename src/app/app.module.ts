@@ -16,6 +16,7 @@ import { HeaderComponent } from './header/header.component';
 import { NousJoindreComponent } from './nous-joindre/nous-joindre.component';
 import { FoireComponent } from './foire/foire.component';
 import { DetailLibreComponent } from './detail-libre/detail-libre.component';
+import { HorraireComponent } from './horraire/horraire.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { DetailLibreComponent } from './detail-libre/detail-libre.component';
     HeaderComponent,
     NousJoindreComponent,
     FoireComponent,
-    DetailLibreComponent
+    DetailLibreComponent,
+    HorraireComponent
   ],
   imports: [
     BrowserModule,
